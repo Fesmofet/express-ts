@@ -30,10 +30,4 @@ useExpressServer(app, {
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-// app.use((req, res, next) => {
-//   httpContext.ns.bindEmitter(req);
-//   httpContext.ns.bindEmitter(res);
-//   next();
-// });
-
 app.listen(port, () => console.log(`Running on port ${port}`));

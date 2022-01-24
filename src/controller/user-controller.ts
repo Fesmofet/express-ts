@@ -1,13 +1,14 @@
 import {
-  Action, Body,
+  // Action,
+  Body,
   Controller,
   Get,
   OnUndefined,
   Param,
   Post,
   UseAfter,
-  UseBefore,
-  UseInterceptor
+  UseBefore
+  // UseInterceptor
 } from 'routing-controllers';
 import 'reflect-metadata';
 import { loggingAfter, loggingBefore } from '../middleware/middleware';
